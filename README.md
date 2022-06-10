@@ -28,10 +28,18 @@ dans ce service j'ai crée une classe Product  dans les attributs porte un id le
 - la listes des produits:
 ![image](https://user-images.githubusercontent.com/82270887/173076302-98493a3d-82a0-4286-aa64-3408dd638047.png)
 
-## Gateway-service
+## Gateway-service:
 Dans l'application gateway j'ai créé une classe de configuration qui permet de retourner un objet de type routeLocator:
 ![image](https://user-images.githubusercontent.com/82270887/173077913-01b671ba-a55b-4ec8-832d-c3769195762a.png)
 
 ## Service d'enregistrement " Eureka-service " :
 ce service sera connecter avec le service consumer-service et le service inventory-service.
-Puis on va modifier la façon dans le Gateway-service se communique avec le service d'enregistrement ,on le méttre dynamique:
+Puis on va modifier la façon dans le Gateway-service se communique avec le service d'enregistrement ,on le méttre dynamique, on utilise une classe de configuration, on va créer un objet  qui va retourner DiscoveryClientRouteDefinitionLocator:
+![image](https://user-images.githubusercontent.com/82270887/173079939-576db895-c286-477f-8cbf-2214e8e7fa29.png)
+
+## Billing-service:
+pour afficher la fatcure dans l'id =1 on utilise la commande "localhost:8888/BILLING-SERVICE/bills/1
+
+
+## Question 7: Mise en place d’une solution de messagerie asynchrone avec le Broker KAFKA
+
