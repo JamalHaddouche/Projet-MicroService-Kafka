@@ -36,6 +36,8 @@ Dans l'application gateway j'ai créé une classe de configuration qui permet de
 ce service sera connecter avec le service consumer-service et le service inventory-service.
 Puis on va modifier la façon dans le Gateway-service se communique avec le service d'enregistrement ,on le méttre dynamique, on utilise une classe de configuration, on va créer un objet  qui va retourner DiscoveryClientRouteDefinitionLocator:
 ![image](https://user-images.githubusercontent.com/82270887/173079939-576db895-c286-477f-8cbf-2214e8e7fa29.png)
+Pour visualiser les services qui sont connecter avec eurika on utlise la commande : localhost:8761
+![image](https://user-images.githubusercontent.com/82270887/173147437-33ab1aa3-8a1b-4599-91bf-cc66a0e6cf0a.png)
 
 ## Billing-service:
 pour afficher la fatcure dans l'id =1 on utilise la commande "localhost:8888/BILLING-SERVICE/bills/1
