@@ -40,7 +40,15 @@ Pour visualiser les services qui sont connecter avec eurika on utlise la command
 ![image](https://user-images.githubusercontent.com/82270887/173147437-33ab1aa3-8a1b-4599-91bf-cc66a0e6cf0a.png)
 
 ## Billing-service:
+pour afficher la liste des factures on utilise la commande "localhost:8888/BILLING-SERVICE:bills
+![image](https://user-images.githubusercontent.com/82270887/173152497-9f1fa47b-2d70-465c-b17a-16dbda514a97.png)
+
 pour afficher la fatcure dans l'id =1 on utilise la commande "localhost:8888/BILLING-SERVICE/bills/1
+
+pour afficher la liste des produits commander par un consomateur on utlise la projection fullBill , la commande suivant ""http://localhost:8888/BILLING-SERVICE/fullBill/1 "affiche les produits commander par le consomateur qui porte l'id=1 et affiche des informations concernant ce client :
+![image](https://user-images.githubusercontent.com/82270887/173154108-324eceb7-d5f6-4807-a431-74f5fe39a331.png)
+
+
 
 
 ## Question 7: Mise en place d’une solution de messagerie asynchrone avec le Broker KAFKA
