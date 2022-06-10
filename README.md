@@ -9,7 +9,7 @@ et le moment quand le gateway connait le service il va contacter le micro-servic
 Pour éviter de créer un fichier de configuartion de chaque micro-service, on utilise un service de configuration.
 On utilise Rest pour la communication entre les services c'est une communication synchrone.
 ## Customer-service
-dans ce service j'ai crée une classe customer dans les attributs porte l'id , le nom et l'email de client ,puis j ai crée un interface CustomersRepository pour ajouter les élements dans base de données.
+dans ce service j'ai crée une classe customer dans les attributs porte l'id , le nom et l'email de client ,puis j'ai crée un interface CustomersRepository pour ajouter les élements dans base de données.
 voici la liste des consomateur :
 
 ![image](https://user-images.githubusercontent.com/82270887/173071571-65f2a8e8-81e1-456b-89b8-338f9d2611e9.png)
@@ -19,6 +19,19 @@ pour voir que les IDs et les noms des utilisateurs ,on utilise une projection:
 
 ![image](https://user-images.githubusercontent.com/82270887/173072008-dc296287-e4ab-46cf-adbf-743ae69690df.png)
 
-- la projection du premier consomateur
+- la projection du premiere consomateur
 
 ![image](https://user-images.githubusercontent.com/82270887/173071830-9d7cf41f-0f76-4df5-88eb-8c0794b392c5.png)
+
+## Inventory-service
+dans ce service j'ai crée une classe Product  dans les attributs porte un id le nom du produit et le prix de produit ,puis j'ai créé une interface ProductRepository 
+- la listes des produits:
+![image](https://user-images.githubusercontent.com/82270887/173076302-98493a3d-82a0-4286-aa64-3408dd638047.png)
+
+## Gateway-service
+Dans l'application gateway j'ai créé une classe de configuration qui permet de retourner un objet de type routeLocator:
+![image](https://user-images.githubusercontent.com/82270887/173077913-01b671ba-a55b-4ec8-832d-c3769195762a.png)
+
+## Service d'enregistrement " Eureka-service " :
+ce service sera connecter avec le service consumer-service et le service inventory-service.
+Puis on va modifier la façon dans le Gateway-service se communique avec le service d'enregistrement ,on le méttre dynamique:
