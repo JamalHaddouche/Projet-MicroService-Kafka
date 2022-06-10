@@ -43,7 +43,8 @@ Pour visualiser les services qui sont connecter avec eurika on utlise la command
 pour afficher la liste des factures on utilise la commande "localhost:8888/BILLING-SERVICE:bills
 ![image](https://user-images.githubusercontent.com/82270887/173152497-9f1fa47b-2d70-465c-b17a-16dbda514a97.png)
 
-pour afficher la fatcure dans l'id =1 on utilise la commande "localhost:8888/BILLING-SERVICE/bills/1
+pour afficher la fatcure dans l'id =1 on utilise la commande "localhost:8888/BILLING-SERVICE/bills/1 ,on remarque que cette facture porte l'id de consomateur 1:
+![image](https://user-images.githubusercontent.com/82270887/173154254-bca34589-53d2-448c-b07a-4f46fc0bd5bb.png)
 
 pour afficher la liste des produits commander par un consomateur on utlise la projection fullBill , la commande suivant ""http://localhost:8888/BILLING-SERVICE/fullBill/1 "affiche les produits commander par le consomateur qui porte l'id=1 et affiche des informations concernant ce client :
 ![image](https://user-images.githubusercontent.com/82270887/173154108-324eceb7-d5f6-4807-a431-74f5fe39a331.png)
