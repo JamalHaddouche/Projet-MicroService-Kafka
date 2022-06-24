@@ -55,3 +55,16 @@ pour afficher la liste des produits commander par un consomateur on utlise la pr
 
 ## Question 7: Mise en place d’une solution de messagerie asynchrone avec le Broker KAFKA
 
+ce micro service permet d'envoyer un topic Facturation chaque seconde contenant un numéro de facture, le nom du client et le montant de la facture:
+
+![image](https://user-images.githubusercontent.com/82270887/175530699-aa7f753f-9d2d-40a6-9d85-b4a300b8ef7b.png)
+
+j'ai créer un fonction total facture qui permet d'afficher que la somme de la facture pour chaque 5 second:
+
+![image](https://user-images.githubusercontent.com/82270887/175531004-ccef5b05-5956-4d5b-a453-bf2b7c325413.png)
+
+Puis une fonction qui permet de calculer le totale de la facture pour cahque client :
+
+![image](https://user-images.githubusercontent.com/82270887/175531155-8caad8c4-a892-470f-91fb-3682b1295017.png)
+
+
